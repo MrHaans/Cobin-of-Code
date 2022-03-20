@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fbe3cb;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* reset style */
+li {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-container ul {
+    padding: 22px 0;
+    margin-right: 25%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 50px;
+    z-index: 100;
+}
+
+.nav-container ul li a {
+    font-size: 1.2rem;
+    font-family: 'Signika', sans-serif;
+    font-weight: 200;
+    color: rgb(32, 32, 32);
+}
+
+.nav-container ul li a:hover {
+    border-bottom: 2px black solid;
+}
+
+section .main {
+    position: relative;
+}
+
+.main {
+    height: 80vh;
+    width: 100%;
+}
+
+.main-container {
+    margin: 25vh 20vw;
+}
+
+.main-container h1 {
+    font-size: 5rem;
+    font-family: 'Signika', sans-serif;
+    font-weight: 700;
+    color: rgb(32, 32, 32);
+}
+
+.main-container p {
+    font-size: 2rem;
+    font-family: 'Signika', sans-serif;
+    font-weight: 500;
+    color: rgb(32, 32, 32);
+    margin-left: 10px;
+}
+
+.main-container a {
+    display: inline-block;
+    padding: 8px 35px;
+    margin: 20px 0 0 10px;
+    background-color: #f1b87e;
+    font-size: 1.2rem;
+    font-family: 'Signika', sans-serif;
+    font-weight: 500;
+    color: rgb(218, 218, 218);
+}
+
+.main-container a:hover {
+    background-color: #ad865c;
+}
+
+.book-1 img {
+    position: absolute;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+}
+
+.book-2 img {
+    position: absolute;
+    height: 250px;
+    top: 10%;
+    left: 65%;
+    transform: translateY(-50%);
+    transform: rotate(-35deg);
+    z-index: -1;
+    animation: books 2s ease-in-out 0s infinite alternate;
+}
+
+@keyframes books {
+    from {top: 20%};
+    to {top: 10%};
+}
+
+.featured-container {
+    height: 100%;
+    width: 100%;  
+}
+
+.featured-container ul {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.featured-container img {
+    height: 120px;
+}
+
+.featured-container h1 {
+    font-size: 1.8rem;
+    font-family: 'Signika', sans-serif;
+    font-weight: 700;
+    margin-top: 10px;
+    color: rgb(32, 32, 32);
+}
+
+.featured-container p {
+    font-size: 1.2rem;
+    font-family: 'Signika', sans-serif;
+    font-weight: 300;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.compass {
+    flex: 2;
+    padding: 25px 0;
+    background-color: #E6BC7E;
+}
+
+.coffee {
+    flex: 1;
+    padding: 25px 0;
+    background-color: #E09E38;
+}
+
+.bonfire {
+    flex: 2;
+    padding: 25px 0;
+    background-color: #614F35;
+}
+
+.contact-container {
+    text-align: center;
+    height: 50vh;
+    margin: 100px 20%;
+    position: relative;
+}
+
+.contact-container h1 {
+    font-size: 3rem;
+    font-family: 'Signika', sans-serif;
+    font-weight: 700;
+    width: 50%;
+    margin: 0 auto;
+    color: rgb(32, 32, 32);
+}
+
+.contact-container p {
+    font-size: 1.2rem;
+    font-family: 'Signika', sans-serif;
+    font-weight: 500;
+    width: 80%;
+    color: rgb(32, 32, 32);
+    margin: 15px auto;
+}
+
+.contact-container h3 {
+    font-size: 2.5rem;
+    font-family: 'Signika', sans-serif;
+    font-weight: 500;
+    color: rgb(32, 32, 32);
+    margin-top: 100px;
+}
+
+.ladies img{
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    transform: translateY(-50%);
+    height: 600px;
+}
+
+.pencil img {
+    position: absolute;
+    top: 9%;
+    left: 72%;
+    transform: translateY(-50%);
+    height: 200px;
+}
+
+footer {
+    position: relative;
+    height: 30vh;
+    text-align: center;
+    background-color: #E09E38;
+}
+
+footer p {
+    font-size: 1.2rem;
+    font-family: 'Signika', sans-serif;
+    font-weight: 300;
+    color: rgb(218, 218, 218);
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.arrow img {
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+    left: 60%;
+    height: 500px;
+}
